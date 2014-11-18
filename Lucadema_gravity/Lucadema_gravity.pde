@@ -16,7 +16,7 @@ void draw() {
   locX += velX;
   locY += velY;
   if(locY + sz/2 > height){
-    velY *= -1;
+    velY = -abs(velY) * .75;
     locY = height - sz/2;
   }
 }
